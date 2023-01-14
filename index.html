@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .alert_zone{
+            position: fixed;
+            top:0;
+            left:0;
+            bottom:0;
+            right:0;
+            background-color: slategrey;
+            opacity:0.4;
+        }
+        .alert_content{
+            position: fixed;
+            top: 100px;
+            height: 600px;
+            width: 600px;
+            left: 35vw;
+            border-radius: 4px;
+            background: white;
+        }
+        .hide{
+            display:none;
+        }
+        .close{
+            position: absolute;
+            background-color:rgb(105,105,105,0.4);
+            padding: 8px;
+            text-align: center;
+            width: 30px;
+            border: 1px solid darkslateblue;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .img_content{
+            position: absolute;
+            width:100%;
+            height:100%;
+            border-radius: 4px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="imgList" class="img_list"></div>
+    <div id="alertZone" class="alert_zone hide"></div>
+    <div id="alertContent" class="alert_content hide">
+        <img id="imgContent" class="img_content" alt="house image">
+        <div id="close" class="close">X</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
